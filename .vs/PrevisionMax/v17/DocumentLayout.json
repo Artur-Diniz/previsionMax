@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\artur\\Desktop\\Projetos\\PrevisionMax\\PrevisionMax\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D1F0E5A5-E045-4D6E-A806-70AA9C07876D}|PrevisionMax\\PrevisionMax.csproj|c:\\users\\artur\\desktop\\projetos\\previsionmax\\previsionmax\\previsionmax\\driver\\obterultimos jogos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1F0E5A5-E045-4D6E-A806-70AA9C07876D}|PrevisionMax\\PrevisionMax.csproj|solutionrelative:previsionmax\\driver\\obterultimos jogos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1F0E5A5-E045-4D6E-A806-70AA9C07876D}|PrevisionMax\\PrevisionMax.csproj|c:\\users\\artur\\desktop\\projetos\\previsionmax\\previsionmax\\previsionmax\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1F0E5A5-E045-4D6E-A806-70AA9C07876D}|PrevisionMax\\PrevisionMax.csproj|solutionrelative:previsionmax\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D1F0E5A5-E045-4D6E-A806-70AA9C07876D}|PrevisionMax\\PrevisionMax.csproj|c:\\users\\artur\\desktop\\projetos\\previsionmax\\previsionmax\\previsionmax\\driver\\teste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1F0E5A5-E045-4D6E-A806-70AA9C07876D}|PrevisionMax\\PrevisionMax.csproj|solutionrelative:previsionmax\\driver\\teste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,19 +22,45 @@
       "DocumentGroups": [
         {
           "DockedHeight": 283,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\artur\\Desktop\\Projetos\\PrevisionMax\\PrevisionMax\\PrevisionMax\\Program.cs",
+              "RelativeDocumentMoniker": "PrevisionMax\\Program.cs",
+              "ToolTip": "C:\\Users\\artur\\Desktop\\Projetos\\PrevisionMax\\PrevisionMax\\PrevisionMax\\Program.cs",
+              "RelativeToolTip": "PrevisionMax\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T06:28:18.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Teste.cs",
               "DocumentMoniker": "C:\\Users\\artur\\Desktop\\Projetos\\PrevisionMax\\PrevisionMax\\PrevisionMax\\Driver\\Teste.cs",
               "RelativeDocumentMoniker": "PrevisionMax\\Driver\\Teste.cs",
               "ToolTip": "C:\\Users\\artur\\Desktop\\Projetos\\PrevisionMax\\PrevisionMax\\PrevisionMax\\Driver\\Teste.cs",
               "RelativeToolTip": "PrevisionMax\\Driver\\Teste.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAuwDUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-28T01:40:21.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ObterUltimos jogos.cs",
+              "DocumentMoniker": "C:\\Users\\artur\\Desktop\\Projetos\\PrevisionMax\\PrevisionMax\\PrevisionMax\\Driver\\ObterUltimos jogos.cs",
+              "RelativeDocumentMoniker": "PrevisionMax\\Driver\\ObterUltimos jogos.cs",
+              "ToolTip": "C:\\Users\\artur\\Desktop\\Projetos\\PrevisionMax\\PrevisionMax\\PrevisionMax\\Driver\\ObterUltimos jogos.cs",
+              "RelativeToolTip": "PrevisionMax\\Driver\\ObterUltimos jogos.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAuwHQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T01:37:00.532Z",
               "EditorCaption": ""
             }
           ]

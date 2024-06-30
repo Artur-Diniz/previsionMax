@@ -17,7 +17,6 @@ namespace PrevisionMax.Driver
         public IWebDriver drive;
         public Teste() 
         {
-            string path = @"C:\Users\artur\Desktop\Projetos\PrevisionMax\PrevisionMax\PrevisionMax\Images\";
 
             if (driver == null)
                 StartBrowser();
