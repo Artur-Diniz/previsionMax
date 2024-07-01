@@ -7,16 +7,12 @@
       "RelativeMoniker": "D:0:0:{D1F0E5A5-E045-4D6E-A806-70AA9C07876D}|PrevisionMax\\PrevisionMax.csproj|solutionrelative:previsionmax\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1F0E5A5-E045-4D6E-A806-70AA9C07876D}|PrevisionMax\\PrevisionMax.csproj|c:\\users\\artur\\desktop\\projetos\\previsionmax\\previsionmax\\previsionmax\\driver\\obterultimos jogos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F0E5A5-E045-4D6E-A806-70AA9C07876D}|PrevisionMax\\PrevisionMax.csproj|solutionrelative:previsionmax\\driver\\obterultimos jogos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1F0E5A5-E045-4D6E-A806-70AA9C07876D}|PrevisionMax\\PrevisionMax.csproj|c:\\users\\artur\\desktop\\projetos\\previsionmax\\previsionmax\\previsionmax\\driver\\obtendotabelaclassificao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1F0E5A5-E045-4D6E-A806-70AA9C07876D}|PrevisionMax\\PrevisionMax.csproj|solutionrelative:previsionmax\\driver\\obtendotabelaclassificao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1F0E5A5-E045-4D6E-A806-70AA9C07876D}|PrevisionMax\\PrevisionMax.csproj|c:\\users\\artur\\desktop\\projetos\\previsionmax\\previsionmax\\previsionmax\\driver\\obterestastistica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1F0E5A5-E045-4D6E-A806-70AA9C07876D}|PrevisionMax\\PrevisionMax.csproj|solutionrelative:previsionmax\\driver\\obterestastistica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1F0E5A5-E045-4D6E-A806-70AA9C07876D}|PrevisionMax\\PrevisionMax.csproj|c:\\users\\artur\\desktop\\projetos\\previsionmax\\previsionmax\\previsionmax\\driver\\teste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F0E5A5-E045-4D6E-A806-70AA9C07876D}|PrevisionMax\\PrevisionMax.csproj|solutionrelative:previsionmax\\driver\\teste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,15 +26,15 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Teste.cs",
-              "DocumentMoniker": "C:\\Users\\artur\\Desktop\\Projetos\\PrevisionMax\\PrevisionMax\\PrevisionMax\\Driver\\Teste.cs",
-              "RelativeDocumentMoniker": "PrevisionMax\\Driver\\Teste.cs",
-              "ToolTip": "C:\\Users\\artur\\Desktop\\Projetos\\PrevisionMax\\PrevisionMax\\PrevisionMax\\Driver\\Teste.cs",
-              "RelativeToolTip": "PrevisionMax\\Driver\\Teste.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAgwDIAAAAGAAAA",
+              "DocumentIndex": 2,
+              "Title": "ObterEstastistica.cs",
+              "DocumentMoniker": "C:\\Users\\artur\\Desktop\\Projetos\\PrevisionMax\\PrevisionMax\\PrevisionMax\\Driver\\ObterEstastistica.cs",
+              "RelativeDocumentMoniker": "PrevisionMax\\Driver\\ObterEstastistica.cs",
+              "ToolTip": "C:\\Users\\artur\\Desktop\\Projetos\\PrevisionMax\\PrevisionMax\\PrevisionMax\\Driver\\ObterEstastistica.cs",
+              "RelativeToolTip": "PrevisionMax\\Driver\\ObterEstastistica.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAgwDEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T19:59:04.112Z",
+              "WhenOpened": "2024-07-01T19:34:13.34Z",
               "EditorCaption": ""
             },
             {
@@ -49,35 +45,22 @@
               "RelativeDocumentMoniker": "PrevisionMax\\Program.cs",
               "ToolTip": "C:\\Users\\artur\\Desktop\\Projetos\\PrevisionMax\\PrevisionMax\\PrevisionMax\\Program.cs",
               "RelativeToolTip": "PrevisionMax\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T21:31:01.25Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ObterEstastistica.cs",
-              "DocumentMoniker": "C:\\Users\\artur\\Desktop\\Projetos\\PrevisionMax\\PrevisionMax\\PrevisionMax\\Driver\\ObterEstastistica.cs",
-              "RelativeDocumentMoniker": "PrevisionMax\\Driver\\ObterEstastistica.cs",
-              "ToolTip": "C:\\Users\\artur\\Desktop\\Projetos\\PrevisionMax\\PrevisionMax\\PrevisionMax\\Driver\\ObterEstastistica.cs",
-              "RelativeToolTip": "PrevisionMax\\Driver\\ObterEstastistica.cs",
-              "ViewState": "AQIAAPUAAAAAAAAAAAAkwAQBAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T16:48:47.012Z",
+              "WhenOpened": "2024-07-01T19:12:24.464Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ObterUltimos jogos.cs",
-              "DocumentMoniker": "C:\\Users\\artur\\Desktop\\Projetos\\PrevisionMax\\PrevisionMax\\PrevisionMax\\Driver\\ObterUltimos jogos.cs",
-              "RelativeDocumentMoniker": "PrevisionMax\\Driver\\ObterUltimos jogos.cs",
-              "ToolTip": "C:\\Users\\artur\\Desktop\\Projetos\\PrevisionMax\\PrevisionMax\\PrevisionMax\\Driver\\ObterUltimos jogos.cs",
-              "RelativeToolTip": "PrevisionMax\\Driver\\ObterUltimos jogos.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAgwIEAAAAIAAAA",
+              "Title": "ObtendoTabelaClassificao.cs",
+              "DocumentMoniker": "C:\\Users\\artur\\Desktop\\Projetos\\PrevisionMax\\PrevisionMax\\PrevisionMax\\Driver\\ObtendoTabelaClassificao.cs",
+              "RelativeDocumentMoniker": "PrevisionMax\\Driver\\ObtendoTabelaClassificao.cs",
+              "ToolTip": "C:\\Users\\artur\\Desktop\\Projetos\\PrevisionMax\\PrevisionMax\\PrevisionMax\\Driver\\ObtendoTabelaClassificao.cs",
+              "RelativeToolTip": "PrevisionMax\\Driver\\ObtendoTabelaClassificao.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAewE8AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T01:37:00.532Z",
+              "WhenOpened": "2024-07-01T18:36:04.018Z",
               "EditorCaption": ""
             }
           ]

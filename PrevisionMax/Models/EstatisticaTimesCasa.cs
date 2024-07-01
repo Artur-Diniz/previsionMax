@@ -8,7 +8,8 @@ namespace PrevisionMax.Models
 {
     public class EstatisticaTimesCasa
     {
-      
+
+            public int IdEstatisticaCasa { get; set; }
             public string NomeTimeCasa { get; set; } = string.Empty;
             public int GolsCasa { get; set; }
             public int TentativasGolsCasa { get; set; } // tentativas de Gol
