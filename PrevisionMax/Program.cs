@@ -3,5 +3,7 @@ using EasyAutomationFramework;
 using EasyAutomationFramework.Model;
 using PrevisionMax.Driver;
 
-var obeter = new ObterUltimos_jogos("https://www.flashscore.com.br/jogo/CfKW9i9o/#/resumo-de-jogo");
-//var teste = new Teste(); 
+//var teste = new Teste();
+//var obeter = new ObterUltimos_jogos("https://www.flashscore.com.br/jogo/CfKW9i9o/#/resumo-de-jogo");
+
+var estatistica = new ObterEstastistica("https://www.flashscore.com.br/jogo/x25d4mwN/#/resumo-de-jogo/resumo-de-jogo");
