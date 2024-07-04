@@ -33,8 +33,7 @@ namespace PrevisionMax.Driver
             {
                 actions.SendKeys(Keys.ArrowDown).Perform();
 
-            }
-         
+            }         
 
             driver.FindElement(By.CssSelector("#li4")).Click();
 

@@ -11,6 +11,9 @@ namespace PrevisionMax.Models
         public int IdEstatisticaFora{ get; set; }
         public string NomeTimeFora { get; set; } = string.Empty;
         public int GolsFora { get; set; }
+        public int GolsSofridosFora { get; set; }
+        public string AdversarioCasa { get; set; } = string.Empty;
+
         public int TentativasGolsFora { get; set; }
         public int chutesnoGolsFora { get; set; }
         public int chutespraforaFora { get; set; }

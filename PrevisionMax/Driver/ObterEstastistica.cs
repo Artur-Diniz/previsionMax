@@ -17,7 +17,6 @@ namespace PrevisionMax.Driver
     {
         public ObterEstastistica(string link)
         {
-            //"#detail > div.filterOver.filterOver--indent > div > a:nth-child(2) > button"
 
             if (driver == null)
                 StartBrowser();
@@ -61,8 +60,22 @@ namespace PrevisionMax.Driver
 
             fora.GolsFora = int.Parse(driver.FindElement(By.CssSelector("#detail > div.duelParticipant > div.duelParticipant__score " +
                 "> div > div.detailScore__wrapper > span:nth-child(3)")).Text);
-           
             
+            casa.AdversarioFora = fora.NomeTimeFora;
+            casa.GolsSofridosCasa = fora.GolsFora;
+            fora.AdversarioCasa = casa.NomeTimeCasa;
+            fora.GolsSofridosFora = casa.GolsCasa;
+
+            Partidas partida = new Partidas();
+
+            partida.NomeTimeFora = fora.NomeTimeFora;
+            partida.NomeTimeCasa = casa.NomeTimeCasa;
+            partida.data = DateTime.Parse(driver.FindElement(By.XPath("//*[@id=\"detail\"]/div[4]/div[1]/div")).Text);
+            string nome = driver.FindElement(By.XPath("//*[@id=\"detail\"]/div[3]/div/span[3]/a")).Text;
+            var nomepart = nome.Split(" - ");
+            partida.Campeonato = string.Format(nomepart[0].Trim());
+            partida.PartidaAnalise = false;
+
             int count = 0;
 
             foreach (var element in linhas)

@@ -29,9 +29,20 @@ namespace PrevisionMax.Driver
             IWebElement cookieButton = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.CssSelector("#onetrust-accept-btn-handler")));
             cookieButton.Click();
 
+            Partidas partida = new Partidas();
+
+            partida.NomeTimeCasa = driver.FindElement(By.XPath("//*[@id=\"detail\"]/div[4]/div[2]/div[3]/div[2]/a")).Text;
+            partida.NomeTimeFora = driver.FindElement(By.XPath("//*[@id=\"detail\"]/div[4]/div[4]/div[3]/div[1]/a")).Text;
+            partida.data = DateTime.Today;
+            string nome = driver.FindElement(By.XPath("//*[@id=\"detail\"]/div[3]/div/span[3]/a")).Text;
+            var nomepart = nome.Split(" - ");
+            partida.Campeonato = string.Format(nomepart[0].Trim());
+            partida.PartidaAnalise = true;
+
+
+
+
             driver.FindElement(By.CssSelector("#detail > div.detailOver > div > a:nth-child(3) > button")).Click();
-
-
 
 
             var items = new List<string>();
@@ -69,7 +80,7 @@ namespace PrevisionMax.Driver
                 }
                 contador += 2;
 
-
+                int voltas = 0;
                 foreach (var element in h2h)
                 {
                     count++;
@@ -83,9 +94,22 @@ namespace PrevisionMax.Driver
 
 
                     string originalWindow = driver.CurrentWindowHandle;
-
+                 
                     foreach (var link in historico)
                     {
+                        voltas = voltas+1;
+                        if(voltas<11)
+                        {
+                            DateTime datajogo = DateTime.Parse(link.FindElement(By.ClassName("h2h__date")).Text);
+                            DateTime hoje = DateTime.Now;
+                            DateTime MargemData = hoje.AddMonths(-3);
+
+                            if (datajogo >= MargemData)
+                                link.Click();
+                            else
+                                break;
+                        }
+                        else
                         link.Click();
 
                         // Espera até que uma nova aba seja aberta
