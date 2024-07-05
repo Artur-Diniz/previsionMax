@@ -49,7 +49,16 @@ namespace PrevisionMax.Driver
                 Console.WriteLine(item);
             }
 
-      
+            actions.SendKeys(Keys.PageDown).Perform();
+            driver.FindElement(By.XPath("//*[@id=\"category-left-menu\"]/div/div[4]")).Click();
+            actions.SendKeys(Keys.ArrowDown).Perform();
+
+            IWebElement BundesLiga = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.XPath("//*[@id=\"category-left-menu\"]/div/div[4]/span[1]/span")));
+            BundesLiga.Click();
+
+
+            actions.SendKeys(Keys.PageUp).Perform();
+
             var Ligas = new List<string>();
 
 
@@ -59,10 +68,24 @@ namespace PrevisionMax.Driver
             foreach (var element in ligas)
             {
                 string item = element.GetAttribute("href");
+                  
+              
+                var nomepart = item.Split("/");
+                 string nomecamp = string.Format(nomepart[5].Trim());
+
+                if(nomecamp== "brasileirao-betano" || nomecamp == "serie-b" ||
+                    nomecamp == "laliga" || nomecamp == "ligue-1" ||
+                    nomecamp == "campeonato-ingles" || nomecamp == "serie-a" ||
+                    nomecamp == "bundesliga")
                 Ligas.Add(item);
             }
-
             driver.Quit();
+
+            foreach (var element in Ligas)
+            {
+                var tabela = new ObtendoTabelaClassificao(element);
+            }
+
         }        
     } 
 }

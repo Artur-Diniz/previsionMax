@@ -50,6 +50,7 @@ namespace PrevisionMax.Driver
             {
                 Classificacao classificacaoTotal = new Classificacao();
 
+
                 poisicao += 1;
                 classificacaoTotal.PosicaoTime = poisicao;
                 classificacaoTotal.NomeTime = elem.FindElement(By.ClassName("tableCellParticipant__name")).Text;
@@ -58,22 +59,55 @@ namespace PrevisionMax.Driver
                 classificacaoTotal.numEmpates = int.Parse(elem.FindElement(By.CssSelector("span:nth-child(5)")).Text);
                 classificacaoTotal.numDerrotas = int.Parse(elem.FindElement(By.CssSelector("span:nth-child(6)")).Text);
                 classificacaoTotal.Pontos = int.Parse(elem.FindElement(By.CssSelector("span:nth-child(9)")).Text);
-                classificacaoTotal.ultiomojogos1 = elem.FindElement(By.CssSelector("div.table__cell.table__cell--form > div:nth-child(2)")).Text;
-                classificacaoTotal.ultiomojogos2 = elem.FindElement(By.CssSelector("div.table__cell.table__cell--form > div:nth-child(3)")).Text;
-                classificacaoTotal.ultiomojogos3 = elem.FindElement(By.CssSelector("div.table__cell.table__cell--form > div:nth-child(4)")).Text;
-                classificacaoTotal.ultiomojogos4 = elem.FindElement(By.CssSelector("div.table__cell.table__cell--form > div:nth-child(5)")).Text;
-                classificacaoTotal.ultiomojogos5 = elem.FindElement(By.CssSelector("div.table__cell.table__cell--form > div:nth-child(6)")).Text;
-
+ 
+                for (int i = 1; i <= 6; i++)
+                {               
+                    try
+                    {
+                        var selector = $"div.table__cell.table__cell--form > div:nth-child({i})";
+                        var element = elem.FindElement(By.CssSelector(selector));
+                        if (element != null && !string.IsNullOrEmpty(element.Text))
+                        {
+                            switch (i)
+                            {
+                                case 2:
+                                    classificacaoTotal.ultiomojogos1 = element.Text;
+                                    break;
+                                case 3:
+                                    classificacaoTotal.ultiomojogos2 = element.Text;
+                                    break;
+                                case 4:
+                                    classificacaoTotal.ultiomojogos3 = element.Text;
+                                    break;
+                                case 5:
+                                    classificacaoTotal.ultiomojogos4 = element.Text;
+                                    break;
+                                case 6:
+                                    classificacaoTotal.ultiomojogos5 = element.Text;
+                                    break;
+                                default:
+                                    break;
+                            }
+                        }
+                    }
+                    catch { }
+                }
+                
+                
+               
                 var golsText = elem.FindElement(By.ClassName("table__cell--score")).Text;
                 var golsParts = golsText.Split(':');
                 if (golsParts.Length == 2)
                 {
                     classificacaoTotal.GolsFeitos = int.Parse(golsParts[0].Trim());
                     classificacaoTotal.GolsSofridos = int.Parse(golsParts[1].Trim());
-                }
-
+                } 
                 TabelaTotal.Add(classificacaoTotal);
-
+                if (TabelaTotal.Count >= 1 && classificacaoTotal.Pontos <= 1)
+                {
+                    break; 
+                }
+                   
             }
 
             driver.Quit();

@@ -46,6 +46,7 @@ namespace PrevisionMax.Driver
 
 
             var items = new List<string>();
+
             var ultimoscasa = new List<Partidas>();
             var ultimosfora = new List<Partidas>();
             var confrontoDireto = new List<Partidas>();
@@ -143,7 +144,7 @@ namespace PrevisionMax.Driver
                         string name = driver.FindElement(By.XPath("//*[@id=\"detail\"]/div[3]/div/span[3]/a")).Text;
                         var part = name.Split(" - ");
                         partidaAnterior.Campeonato = string.Format(part[0].Trim());
-                        partidaAnterior.PartidaAnalise = true;
+                        partidaAnterior.PartidaAnalise = false;
 
                         if (contador == 3 )
                             if( count == 1)
