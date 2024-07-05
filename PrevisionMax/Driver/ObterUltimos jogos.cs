@@ -46,6 +46,11 @@ namespace PrevisionMax.Driver
 
 
             var items = new List<string>();
+            var ultimoscasa = new List<Partidas>();
+            var ultimosfora = new List<Partidas>();
+            var confrontoDireto = new List<Partidas>();
+            var casacasa = new List<Partidas>();
+            var forafora = new List<Partidas>();
 
             IKeyboard teclado = ((IHasInputDevices)driver).Keyboard;
             Actions actions = new Actions(driver);
@@ -125,14 +130,38 @@ namespace PrevisionMax.Driver
                             }
                         }
 
-                        string currentUrl = driver.Url;
+
+                        string currentUrl = driver.Url;                        
                         items.Add(currentUrl);
+
+
+                        Partidas partidaAnterior = new Partidas();
+
+                        partidaAnterior.NomeTimeCasa = driver.FindElement(By.XPath("//*[@id=\"detail\"]/div[4]/div[2]/div[3]/div[2]/a")).Text;
+                        partidaAnterior.NomeTimeFora = driver.FindElement(By.XPath("//*[@id=\"detail\"]/div[4]/div[4]/div[3]/div[1]/a")).Text;
+                        partidaAnterior.data = DateTime.Today;
+                        string name = driver.FindElement(By.XPath("//*[@id=\"detail\"]/div[3]/div/span[3]/a")).Text;
+                        var part = name.Split(" - ");
+                        partidaAnterior.Campeonato = string.Format(part[0].Trim());
+                        partidaAnterior.PartidaAnalise = true;
+
+                        if (contador == 3 )
+                            if( count == 1)
+                            ultimoscasa.Add(partidaAnterior);
+                            else if(count == 2)
+                            ultimosfora.Add(partidaAnterior);
+                            else 
+                            confrontoDireto.Add(partidaAnterior);
+                        else if (contador == 6)
+                            casacasa.Add(partidaAnterior);
+                        else if (contador == 9)
+                            forafora.Add(partidaAnterior);
+
 
                         driver.Close();
                         driver.SwitchTo().Window(originalWindow);
                     }
 
-                    // Imprime as URLs capturadas
                     foreach (var item in items)
                     {
                         Console.WriteLine("URL capturada: " + item);

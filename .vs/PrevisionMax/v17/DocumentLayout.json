@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\artur\\Desktop\\Projetos\\PrevisionMax\\PrevisionMax\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D1F0E5A5-E045-4D6E-A806-70AA9C07876D}|PrevisionMax\\PrevisionMax.csproj|c:\\users\\artur\\desktop\\projetos\\previsionmax\\previsionmax\\previsionmax\\driver\\obterultimos jogos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1F0E5A5-E045-4D6E-A806-70AA9C07876D}|PrevisionMax\\PrevisionMax.csproj|solutionrelative:previsionmax\\driver\\obterultimos jogos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D1F0E5A5-E045-4D6E-A806-70AA9C07876D}|PrevisionMax\\PrevisionMax.csproj|c:\\users\\artur\\desktop\\projetos\\previsionmax\\previsionmax\\previsionmax\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1F0E5A5-E045-4D6E-A806-70AA9C07876D}|PrevisionMax\\PrevisionMax.csproj|solutionrelative:previsionmax\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1F0E5A5-E045-4D6E-A806-70AA9C07876D}|PrevisionMax\\PrevisionMax.csproj|c:\\users\\artur\\desktop\\projetos\\previsionmax\\previsionmax\\previsionmax\\models\\partidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1F0E5A5-E045-4D6E-A806-70AA9C07876D}|PrevisionMax\\PrevisionMax.csproj|solutionrelative:previsionmax\\models\\partidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1F0E5A5-E045-4D6E-A806-70AA9C07876D}|PrevisionMax\\PrevisionMax.csproj|c:\\users\\artur\\desktop\\projetos\\previsionmax\\previsionmax\\previsionmax\\driver\\obterultimos jogos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F0E5A5-E045-4D6E-A806-70AA9C07876D}|PrevisionMax\\PrevisionMax.csproj|solutionrelative:previsionmax\\driver\\obterultimos jogos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1F0E5A5-E045-4D6E-A806-70AA9C07876D}|PrevisionMax\\PrevisionMax.csproj|c:\\users\\artur\\desktop\\projetos\\previsionmax\\previsionmax\\previsionmax\\driver\\obterestastistica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,24 +26,24 @@
       "DocumentGroups": [
         {
           "DockedHeight": 283,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ObterUltimos jogos.cs",
               "DocumentMoniker": "C:\\Users\\artur\\Desktop\\Projetos\\PrevisionMax\\PrevisionMax\\PrevisionMax\\Driver\\ObterUltimos jogos.cs",
               "RelativeDocumentMoniker": "PrevisionMax\\Driver\\ObterUltimos jogos.cs",
               "ToolTip": "C:\\Users\\artur\\Desktop\\Projetos\\PrevisionMax\\PrevisionMax\\PrevisionMax\\Driver\\ObterUltimos jogos.cs",
               "RelativeToolTip": "PrevisionMax\\Driver\\ObterUltimos jogos.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAtwCYAAABDAAAA",
+              "ViewState": "AQIAAIwAAAAAAAAAAAAgwDEAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-04T17:59:47.136Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Partidas.cs",
               "DocumentMoniker": "C:\\Users\\artur\\Desktop\\Projetos\\PrevisionMax\\PrevisionMax\\PrevisionMax\\Models\\Partidas.cs",
               "RelativeDocumentMoniker": "PrevisionMax\\Models\\Partidas.cs",
@@ -51,8 +51,7 @@
               "RelativeToolTip": "PrevisionMax\\Models\\Partidas.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAQwBQAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T17:59:13.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-04T17:59:13.029Z"
             },
             {
               "$type": "Document",
@@ -64,18 +63,17 @@
               "RelativeToolTip": "PrevisionMax\\Driver\\ObterEstastistica.cs",
               "ViewState": "AQIAADYAAAAAAAAAAADwv0MAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T17:01:26.909Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-04T17:01:26.909Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\artur\\Desktop\\Projetos\\PrevisionMax\\PrevisionMax\\PrevisionMax\\Program.cs",
               "RelativeDocumentMoniker": "PrevisionMax\\Program.cs",
               "ToolTip": "C:\\Users\\artur\\Desktop\\Projetos\\PrevisionMax\\PrevisionMax\\PrevisionMax\\Program.cs",
               "RelativeToolTip": "PrevisionMax\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-04T17:01:04.168Z",
               "EditorCaption": ""
