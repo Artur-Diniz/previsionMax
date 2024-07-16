@@ -16,6 +16,8 @@ namespace PrevisionMax.Models
         public string NomeTimeFora { get; set; } = string.Empty;
         public DateTime data { get; set; }
 
+        public string TipoPartida { get; set; }= string.Empty;  
+
         public bool PartidaAnalise { get; set; }
 
         public string Campeonato { get; set; } = string.Empty;

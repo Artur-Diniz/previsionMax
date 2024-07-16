@@ -58,6 +58,10 @@
               "target": "Package",
               "version": "[1.0.0.12, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
               "version": "[126.0.6478.12600, )"

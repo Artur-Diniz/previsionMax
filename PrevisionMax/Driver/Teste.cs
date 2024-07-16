@@ -79,6 +79,7 @@ namespace PrevisionMax.Driver
                     nomecamp == "bundesliga")
                 Ligas.Add(item);
             }
+
             driver.Quit();
 
             foreach (var element in Ligas)

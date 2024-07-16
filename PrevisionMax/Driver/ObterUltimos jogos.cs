@@ -38,6 +38,7 @@ namespace PrevisionMax.Driver
             var nomepart = nome.Split(" - ");
             partida.Campeonato = string.Format(nomepart[0].Trim());
             partida.PartidaAnalise = true;
+            partida.TipoPartida = "PartidaAnalise";
 
 
 
@@ -147,19 +148,40 @@ namespace PrevisionMax.Driver
                         partidaAnterior.PartidaAnalise = false;
 
                         if (contador == 3 )
-                            if( count == 1)
-                            ultimoscasa.Add(partidaAnterior);
-                            else if(count == 2)
-                            ultimosfora.Add(partidaAnterior);
-                            else 
-                            confrontoDireto.Add(partidaAnterior);
+                            if (count == 1)
+                            {
+                                partidaAnterior.TipoPartida = "Ultimas5Casa";
+                                ultimoscasa.Add(partidaAnterior);
+
+                            }
+                            else if (count == 2)
+                            {
+                                partidaAnterior.TipoPartida = "Ultimas5Fora";
+
+                                ultimosfora.Add(partidaAnterior);
+                            }
+                            else
+                            {
+                                partidaAnterior.TipoPartida = "ConfrontoDireto";
+
+                                confrontoDireto.Add(partidaAnterior);
+                            }
                         else if (contador == 6)
+                        {
+                            partidaAnterior.TipoPartida = "CasaCasa";
+
                             casacasa.Add(partidaAnterior);
+                        }
                         else if (contador == 9)
+                        {
+                            partidaAnterior.TipoPartida = "ForaFora";
+
                             forafora.Add(partidaAnterior);
-
-
+                        }
                         driver.Close();
+
+                        var estatistica = new ObterEstastistica(currentUrl, partidaAnterior.TipoPartida);
+
                         driver.SwitchTo().Window(originalWindow);
                     }
 
@@ -178,7 +200,8 @@ namespace PrevisionMax.Driver
                 }
             }
 
-            //parte reservada para anotar todas as estátiscas do jogo um por um 
+
+
 
             driver.Quit();
         }
