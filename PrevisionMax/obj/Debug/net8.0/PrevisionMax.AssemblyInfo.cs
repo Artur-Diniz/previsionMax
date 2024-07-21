@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PrevisionMax")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb46d7ea489b625bc462b73ac25408e1faf3cffc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c769873bd289ca002ce70840ded341d6d59dac2d")]
 [assembly: System.Reflection.AssemblyProductAttribute("PrevisionMax")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PrevisionMax")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -8,8 +8,8 @@ namespace PrevisionMax.Models
 {
     public class PartidaComEstatisticaDTO
     {
-        public required Partidas Partida { get; set; }
-        public required EstatisticaTimesCasa Casa { get; set; }
-        public required EstatisticaTimesFora Fora { get; set; }
+        public  Partidas Partida { get; set; }
+        public  EstatisticaTimesCasa Casa { get; set; }
+        public  EstatisticaTimesFora Fora { get; set; }
     }
 }

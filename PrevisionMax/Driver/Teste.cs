@@ -32,23 +32,7 @@ namespace PrevisionMax.Driver
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             IWebElement cookieButton = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.CssSelector("#onetrust-accept-btn-handler")));
             cookieButton.Click();
-
-
-            var jogos_dia = GetValue(TypeElement.Xpath, "//*[@id=\"live-table\"]/section/div/div[1]")
-                .element.FindElements(By.CssSelector(".eventRowLink"));
-
-            foreach (var element in jogos_dia)
-            {
-                string item = element.GetAttribute("href");
-                items.Add(item);
-            }
-
-            Console.WriteLine("Links encontrados:");
-            foreach (var item in items)
-            {
-                Console.WriteLine(item);
-            }
-
+            
             actions.SendKeys(Keys.PageDown).Perform();
             driver.FindElement(By.XPath("//*[@id=\"category-left-menu\"]/div/div[4]")).Click();
             actions.SendKeys(Keys.ArrowDown).Perform();
@@ -56,6 +40,12 @@ namespace PrevisionMax.Driver
             IWebElement BundesLiga = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.XPath("//*[@id=\"category-left-menu\"]/div/div[4]/span[1]/span")));
             BundesLiga.Click();
 
+            driver.FindElement(By.CssSelector("#lmenu_81 > svg.lmc__sortIcon.lmc__sortIcon--desktop")).Click();
+            ////*[@id="lmenu_22"]
+            //#category-left-menu > div > div:nth-child(10) > span:nth-child(2) > span
+            driver.FindElement(By.XPath("//*[@id=\"lmenu_22\"]")).Click();
+            IWebElement ArgentinaLiga = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.CssSelector("#category-left-menu > div > div.lmc__block.lmc__blockOpened > span:nth-child(2) > span")));
+            ArgentinaLiga.Click();
 
             actions.SendKeys(Keys.PageUp).Perform();
 
@@ -76,17 +66,34 @@ namespace PrevisionMax.Driver
                 if(nomecamp== "brasileirao-betano" || nomecamp == "serie-b" ||
                     nomecamp == "laliga" || nomecamp == "ligue-1" ||
                     nomecamp == "campeonato-ingles" || nomecamp == "serie-a" ||
-                    nomecamp == "bundesliga")
+                    nomecamp == "bundesliga" || nomecamp == "liga-profissional") 
                 Ligas.Add(item);
+            }
+
+            var jogos_dia = GetValue(TypeElement.Xpath, "//*[@id=\"live-table\"]/section/div/div[1]")
+                .element.FindElements(By.CssSelector(".eventRowLink"));
+
+
+            foreach (var element in jogos_dia)
+            {
+                string item = element.GetAttribute("href");
+
+                items.Add(item);
             }
 
             driver.Quit();
 
-            foreach (var element in Ligas)
+            foreach (var item in items)
             {
-                var tabela = new ObtendoTabelaClassificao(element);
+                var obeter = new ObterUltimos_jogos(item);
             }
 
+            foreach (var element in Ligas)
+            {
+             //  // var tabela = new ObtendoTabelaClassificao(element);
+            }
+
+           
         }        
     } 
 }

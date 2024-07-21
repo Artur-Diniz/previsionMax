@@ -11,21 +11,121 @@ namespace PrevisionMax.Transicao
     {
         public static async Task EnviarDadosAsync(PartidaComEstatisticaDTO dto)
         {
-            var json = JsonConvert.SerializeObject(dto);
-            var data = new StringContent(json, Encoding.UTF8, "application/json");
-
-            using (var client = new HttpClient())
+            if (dto.Casa != null || dto.Fora != null)
             {
-                var url = "http://localhost:5130/api/Partidas/PartidaComEstatistica";
-                var response = await client.PostAsync(url, data);
+                var json = JsonConvert.SerializeObject(dto);
+                var data = new StringContent(json, Encoding.UTF8, "application/json");
 
-                if (response.IsSuccessStatusCode)
+                using (var client = new HttpClient())
                 {
-                    Console.WriteLine("Dados enviados com sucesso!");
+                    try
+                    {
+                        var url = "http://localhost:5130/api/Partidas/PartidaComEstatistica";
+                        var response = await client.PostAsync(url, data);
+
+
+                        if (response.IsSuccessStatusCode)
+                        {
+                            Console.WriteLine("Dados enviados com sucesso!");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Falha ao enviar os dados");
+                        }
+                    }
+                    catch
+                    {
+                        var url = "http://PrevisionMax.somee.com/PrevisionMax/api/Partidas/PartidaComEstatistica";
+                        var response = await client.PostAsync(url, data);
+
+
+                        if (response.IsSuccessStatusCode)
+                        {
+                            Console.WriteLine("Dados enviados com sucesso!");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Falha ao enviar os dados");
+                        }
+
+                    }
+                }
+            }
+            else
+            {
+                if (dto.Partida == null)
+                {
+                    var json = JsonConvert.SerializeObject(dto);
+                    var data = new StringContent(json, Encoding.UTF8, "application/json");
+
+                    using (var client = new HttpClient())
+                    {
+
+
+                        var url = "http://PrevisionMax.somee.com/PrevisionMax/api/palpites/GerarPalpites";
+                        var response = await client.PostAsync(url, data);
+
+
+                        if (response.IsSuccessStatusCode)
+                        {
+                            Console.WriteLine("Dados enviados com sucesso!");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Falha ao enviar os dados");
+                        }
+                    }
                 }
                 else
+                try
                 {
-                    Console.WriteLine("Falha ao enviar os dados");
+                    var json = JsonConvert.SerializeObject(dto.Partida);
+                    var data = new StringContent(json, Encoding.UTF8, "application/json");
+
+                    using (var client = new HttpClient())
+                    {
+
+                        var url = "http://PrevisionMax.somee.com/PrevisionMax/api/Partidas";
+
+                        var response = await client.PostAsync(url, data);
+
+
+                        if (response.IsSuccessStatusCode)
+                        {
+                            Console.WriteLine("Dados enviados com sucesso!");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Falha ao enviar os dados");
+                        }
+
+                    }
+
+
+
+                }
+                catch
+                {
+                    var json = JsonConvert.SerializeObject(dto.Partida);
+                    var data = new StringContent(json, Encoding.UTF8, "application/json");
+
+                    using (var client = new HttpClient())
+                    {
+
+
+                            var url = "https://localhost:7038/api/Partidas";
+                            var response = await client.PostAsync(url, data);
+
+
+                        if (response.IsSuccessStatusCode)
+                        {
+                            Console.WriteLine("Dados enviados com sucesso!");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Falha ao enviar os dados");
+                        }
+                    }
                 }
             }
         }
